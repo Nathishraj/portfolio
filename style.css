@@ -1,0 +1,46 @@
+/* Base */
+* { box-sizing: border-box; }
+body { background-color: #0f172a; color: #cbd5e1; font-family: sans-serif; margin: 0; line-height: 1.6; }
+
+/* Spacing and Containers */
+.navbar, .hero, .toolbox, .work-section, footer { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+
+/* Navigation - Updated Button */
+.navbar { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.5rem; color: white; }
+.logo span { color: #3b82f6; }
+.nav-btn { background: #3b82f6; color: white; padding: 0.6rem 1.5rem; border-radius: 9999px; text-decoration: none; font-weight: bold; }
+.nav-btn:hover { background: #2563eb; }
+
+.fiverr-btn { 
+    background: #10b981; 
+    color: white; 
+    padding: 0.6rem 1.5rem; 
+    border-radius: 9999px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    margin-left: 10px; 
+    transition: 0.2s;
+}
+.fiverr-btn:hover { background: #059669; }
+
+/* Hero - Spacing fixed */
+.hero { padding: 3rem 2rem 2rem 2rem; } /* Reduced top padding */
+.hero h2 { font-size: 3.5rem; color: white; line-height: 1.1; margin-bottom: 1rem; }
+.blue { color: #3b82f6; }
+
+/* Toolbox Grid */
+.toolbox { padding-top: 2rem; }
+.tool-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.tool-card { background: #1e293b; padding: 1.5rem; border: 1px solid #334155; border-radius: 1rem; text-align: center; }
+
+/* Projects - Fonts and Cards fixed */
+.project-card { background: #1e293b; padding: 2.5rem; border-radius: 1.5rem; border: 1px solid #334155; margin-bottom: 1.5rem; }
+.project-card h4, .project-card h5 { font-size: 1.5rem; color: white; margin-bottom: 0.5rem; }
+.project-card p { font-size: 1.1rem; } /* Increased readable font size */
+.tag { color: #3b82f6; font-size: 0.8rem; font-weight: 800; text-transform: uppercase; }
+.tech { font-family: monospace; color: #64748b; margin-top: 0.5rem; font-size: 0.9rem; }
+
+/* Footer */
+footer { text-align: center; padding: 4rem 2rem; }
+.btn-email { background: #2563eb; color: white; padding: 1rem 2rem; border-radius: 0.75rem; text-decoration: none; display: inline-block; font-weight: bold; }
